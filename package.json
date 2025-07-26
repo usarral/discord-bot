@@ -1,6 +1,6 @@
 {
 	"name": "monibot",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "dist/index.js",
 	"scripts": {
@@ -11,7 +11,7 @@
 	},
 	"keywords": [],
 	"author": "usarral",
-	"license": "ISC",
+	"license": "MIT",
 	"packageManager": "pnpm@10.13.1",
 	"dependencies": {
 		"@types/mongoose": "^5.11.97",
