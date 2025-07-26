@@ -1,53 +1,73 @@
-# 🎉 Discord Bot
+# 🤖 MoniBot - Discord Bot de Monitoreo y Gestión
 
-## ✅ Estado Final: 100% Completado
+## Descripción
 
-### 🎯 Objetivos Cumplidos
-- ✅ **Comandos adaptados al SO host** (Linux/macOS/Windows)
-- ✅ **Roles configurables mediante asistente** interactivo completo
-- ✅ **Configuración almacenada en MongoDB** cloud para multi-servidor
-- ✅ **Sistema de permisos avanzado** con verificación por roles
-- ✅ **Interfaz de usuario completa** con Discord UI components
+MoniBot es un bot de Discord desarrollado en TypeScript que proporciona herramientas completas de monitoreo del sistema, gestión de servidores y configuración avanzada. Diseñado con una arquitectura moderna y escalable, utiliza MongoDB para persistencia de datos y ofrece una interfaz de usuario intuitiva mediante componentes nativos de Discord.
 
-## 🛠️ Arquitectura Final
+## ✨ Características Principales
 
-### Stack Tecnológico
-- **Discord.js v14.21.0** - Framework del bot
-- **MongoDB + Mongoose** - Base de datos en la nube
-- **TypeScript** - Type safety y mejor DX
-- **Node.js nativo** - Variables de entorno sin dependencias
+- 🔧 **Configuración Avanzada** - Asistente interactivo con modales y menús de selección
+- 📊 **Monitoreo del Sistema** - Información en tiempo real de CPU, RAM, disco y uptime
+- 🛡️ **Sistema de Permisos** - Control granular basado en roles
+- 🗄️ **Base de Datos en la Nube** - Integración completa con MongoDB Atlas
+- � **Logs Estructurados** - Sistema profesional de logging con prefijos por módulo
+- 🔄 **Auto-reconexión** - Manejo robusto de fallos de conectividad
 
-### Comandos Implementados
+## 🚀 Instalación Rápida
 
-#### `/setup` - Asistente de Configuración
-- ✅ Modal forms para información básica
-- ✅ Select menus para selección de roles
-- ✅ Configuración de canales específicos
-- ✅ Toggle de características del bot
+1. **Clonar el proyecto**
+   ```bash
+   git clone <repository-url>
+   cd discord-bot
+   ```
 
-#### `/status` - Monitoreo Cross-Platform
-- ✅ CPU, RAM, Disco, Uptime
-- ✅ Detección automática del OS
-- ✅ Comandos específicos por plataforma
+2. **Instalar dependencias**
+   ```bash
+   pnpm install
+   ```
 
-#### `/reboot` - Reinicio Seguro
-- ✅ Confirmación con timeout 30s
-- ✅ Comandos seguros por SO
-- ✅ Verificación de permisos
+3. **Configurar variables de entorno**
+   ```bash
+   cp .env.example .env
+   # Editar .env con tus credenciales
+   ```
 
-#### `/permisos` - Gestión de Accesos
-- ✅ Visualización de configuración actual
-- ✅ Asignación interactiva de roles
-- ✅ Control granular por comando
+4. **Ejecutar en desarrollo**
+   ```bash
+   pnpm dev
+   ```
 
-### Sistema de Almacenamiento
+## 📦 Comandos Disponibles
 
-#### MongoDB Schema
-```typescript
-{
-  guildId: string,              // ID único del servidor
-  botName: string,              // Nombre personalizado
-  timezone: string,             // Zona horaria
+- `/setup` - Asistente de configuración interactivo
+- `/status` - Monitoreo del sistema en tiempo real
+- `/reboot` - Reinicio seguro del sistema
+- `/permissions` - Gestión avanzada de permisos
+- `/botinfo` - Información del bot y estadísticas
+- `/config` - Gestión de configuración avanzada
+
+## 🛠️ Tecnologías
+
+- **[Discord.js v14](https://discord.js.org/)** - Framework del bot
+- **[TypeScript](https://www.typescriptlang.org/)** - Desarrollo type-safe
+- **[MongoDB](https://www.mongodb.com/)** + **[Mongoose](https://mongoosejs.com/)** - Base de datos
+- **[Biome](https://biomejs.dev/)** - Linting y formateo
+
+## 📚 Documentación
+
+- [🚀 Guía de Instalación](./docs/INSTALLATION.md)
+- [🛠️ Guía de Desarrollo](./docs/DEVELOPMENT.md)
+- [📚 Referencia de API](./docs/API.md)
+- [🔧 Troubleshooting](./docs/TROUBLESHOOTING.md)
+- [📋 Changelog](./docs/CHANGELOG.md)
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver [LICENSE](./LICENSE) para más detalles.
+
+## 🤝 Contribuciones
+
+Desarrollado y mantenido por [usarral](https://github.com/usarral).
   language: string,             // Idioma (es/en)
   
   allowedRoles: Map<string, string[]>, // Permisos por comando
