@@ -1,0 +1,28 @@
+{
+	"name": "monibot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"build:watch": "tsc --watch",
+		"start": "node -r tsconfig-paths/register --env-file=.env dist/main.js",
+		"dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --env-file=.env src/main.ts"
+	},
+	"keywords": [],
+	"author": "usarral",
+	"license": "ISC",
+	"packageManager": "pnpm@10.13.1",
+	"dependencies": {
+		"@types/mongoose": "^5.11.97",
+		"discord.js": "^14.21.0",
+		"mongoose": "^8.16.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.2",
+		"@types/node": "^24.1.0",
+		"ts-node-dev": "^2.0.0",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.8.3"
+	}
+}
