@@ -16,7 +16,7 @@
 	"dependencies": {
 		"@types/mongoose": "^5.11.97",
 		"discord.js": "^14.21.0",
-		"mongoose": "^8.16.5"
+		"mongoose": "^8.22.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.1.2",
