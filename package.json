@@ -19,7 +19,7 @@
 		"mongoose": "^8.16.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.1.2",
+		"@biomejs/biome": "2.5.13",
 		"@types/node": "^24.1.0",
 		"ts-node-dev": "^2.0.0",
 		"tsconfig-paths": "^4.2.0",
